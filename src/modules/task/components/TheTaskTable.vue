@@ -62,6 +62,7 @@ export default {
   },
 
   watch: {
+    // eslint-disable-next-line func-names
     'settings.perPage': function () {
       this.currentPage = 1;
     },

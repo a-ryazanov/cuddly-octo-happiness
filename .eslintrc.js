@@ -12,6 +12,15 @@ module.exports = {
     ecmaVersion: 2020,
   },
   rules: {
+    camelcase: 'off',
+    'import/prefer-default-export': 'off',
+    'vuejs-accessibility/label-has-for': [
+      'error',
+      {
+        required: 'id',
+      },
+    ],
+    'vuejs-accessibility/click-events-have-key-events': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
   },
